@@ -10,3 +10,65 @@ p {
 video{
   align-self: center;
 }
+html body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    background: #a61522;
+    margin: 0;
+    padding: 30px 0px;
+    color: #ddd;
+}
+div.desc-text {
+    background: #ddd;
+    padding: 10px 0;
+}
+.section-pic {
+    padding: 20px 0;
+}
+.grey-background {
+    background: #ddd;
+    margin: 0;
+    padding: 20px 0;
+}
+button {
+	box-sizing: border-box;
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    font-family: "Open Sans", sans-serif;
+}
+
+button:hover {
+	color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+button a {
+    text-decoration: none;
+    color: #a61522;
+}
