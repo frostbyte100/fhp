@@ -2,14 +2,13 @@ localStorage.setItem("viewed", 1);
 
 $(document).ready(function(){
 
-    $("#check").click(function(){
-        $("#check").show();
-    });
 
-    $("#check").click(function(){
-        $("#check").hide();
-    });
-
+    if (localStorage.setItem("view") != 1)
+    {
+      $("#check").click(function(){
+          $("#check").attr("html", "new-link.html");
+      });
+    }
 
 });
 
