@@ -6,11 +6,10 @@ $(document).ready(function(){
     if (localStorage.setItem("view") != 1)
     {
       $("#check").click(function(){
-          $("#check").attr("html", "new-link.html");
+          $("#check").attr("html", "run_away.html");
       });
     }
+    localStorage.setItem("view") ++;
+
 
 });
-
-
-localStorage.setItem("view") ++;
