@@ -8,16 +8,17 @@
     </title>
 
     <link rel = "stylesheet" type = "text/css" href = "../CSS/style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </header>
 
   <body>
 
     <body align="center">
-        <h1>Welcome to Science </h1>
-      <div align="center">
+        <h1>Congrats! You have successfully difused the bomb!</h1>
+      <div align="center" class="desc-text">
         <table style="width:70%">
           <tr>
-            <td><p>Science.</p>
+            <td><p>Somebody wants to talk with you</p>
             </td>
           </tr>
         </table>
@@ -25,23 +26,20 @@
 
       <div align="center">
         <video width="520" height="440"  controls>
-          <source src="../videos/FHP_G3_2015_bugs.mp4" type="video/mp4">
+          <source src="../videos/fbi_recruit.mp4" type="video/mp4">
         </video>
       </div>
 
 
-        <button align="center"> <a href="nuc_eng.html">Continue?..</a></button>
+        <button align="center"> <a href="scienceII.html" id="fbi-link">Continue?..</a></button>
 
-
-      <p class="question" align="center">What is your choice?</p>
-
-      <table style="width:100%">
-        <tr>
-          <td align="center"><button><a href="scienceII.html">Go to Science II</a></button></td>
-          <td align="center"><button><a href="nuc_eng.html">Go to the Nuclear Engineering building</a></button></td>
-        </tr>
-      </table>
-
+    <script type="text/javascript">
+    if( typeof localStorage.visited_bugs !== "undefined" ){
+        $("#fbi-link").attr("href","haswon.html");
+    } else {
+        localStorage.setItem("visited_nuc_eng",true);
+    }
+    </script>
     </body>
 
     </html>

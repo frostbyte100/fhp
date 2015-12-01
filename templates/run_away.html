@@ -34,13 +34,20 @@
       <table style="width:100%">
       <table style="margin:auto">
         <tr>
-          <td align="center"><button id="check"><a href="nuc_eng.html">Click Here</a></button></td>
+          <!-- <td align="center"><button id="check"><a href="nuc_eng.html">Click Here</a></button></td> -->
+          <td align="center"><button><a href="nuc_eng.html" id="nuc-eng-link">Click Here</a></button></td>
         </tr>
       </table>
 
 
 
-
+    <script type="text/javascript">
+    if( typeof localStorage.visited_nuc_eng !== "undefined" ){
+        $("#nuc-eng-link").attr("href","haswon.html");
+    } else {
+        localStorage.setItem("visited_bugs",true);
+    }
+    </script>
 
     </body>
 

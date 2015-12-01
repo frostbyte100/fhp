@@ -36,7 +36,7 @@ div.desc-text {
     margin: 0;
     padding: 20px 0;
 }
-button {
+button, input[type='button'] {
 	box-sizing: border-box;
 	display: inline-block;
     padding: 6px 12px;
@@ -65,7 +65,7 @@ button {
     font-family: "Open Sans", sans-serif;
 }
 
-button:hover {
+button:hover, input[type='button']:hover {
 	color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
