@@ -8,7 +8,9 @@
     </title>
 
     <link rel = "stylesheet" type = "text/css" href = "../CSS/style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../scripts/script.js"></script>
+
   </header>
 
   <body>
@@ -25,13 +27,13 @@
       </div>
 
       <div align="center" >
-        <video width="520" height="440"  controls>
+        <video width="520" height="440"  id="video" controls>
           <source src="../videos/g3_bugs.mp4" type="video/mp4">
         </video>
+        <img id="bugs-leaving" src="../images/bugs_leaving.png" alt="Bugs Leaving" style="max-width:70%; border:0;display:none;">
       </div>
 
-
-      <button align="center" id=""> <a href="scienceII_image.html">Continue?..</a></button>
+      <input align="center" type='button' value='Done with the Video? Click here.' id="done" />
 
 
       <p class="question" align="center">What is your choice?</p>
@@ -43,7 +45,7 @@
         <tr>
           <td align="center"><button><a href="bugs_spray.html">Use Bug Spray</a></button></td>
 
-          <td align="center" id ="check"><button><a href="nuc_eng.html">Run Away</a></button></td>
+          <td align="center"><button><a href="run_away.html">Run Away</a></button></td>
 
         </tr>
       </table>

@@ -8,23 +8,35 @@
     </title>
 
     <link rel = "stylesheet" type = "text/css" href = "../CSS/style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../scripts/script.js"></script>
   </header>
 
   <body>
+    <script>
+      if (typeOf(localStorage.setItem("viewed")) === 'undefined') {
+        localStorage.setItem("viewed", 0);
+      }
+    </script>
 
     <body align="center">
-        <h1>You chose Bug Spray </h1>
+        <h1>You chose to Run Away </h1>
 
 
       <div align="center" >
         <video width="520" height="440"  controls>
-          <source src="../videos/bug_spray.mp4" type="video/mp4">
+          <source src="../videos/bugs_run_away.mp4" type="video/mp4">
         </video>
       </div>
 
 
-      <button align="center"> <a href="wasted_bugs.html">Click Here</a></button>
+
+      <table style="width:100%">
+      <table style="margin:auto">
+        <tr>
+          <td align="center"><button id="check"><a href="nuc_eng.html">Click Here</a></button></td>
+        </tr>
+      </table>
 
 
 

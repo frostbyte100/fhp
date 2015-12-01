@@ -1,15 +1,16 @@
-localStorage.setItem("viewed", 1);
-
 $(document).ready(function(){
-
-
-    if (localStorage.setItem("view") != 1)
+    if (localStorage.viewed != 0)
     {
       $("#check").click(function(){
           $("#check").attr("html", "run_away.html");
       });
     }
-    localStorage.setItem("view") ++;
+    localStorage.viewed ++;
 
+    $("#done").click(function(){
+        $("#video").hide();
+        $("#bugs-leaving").css("display", "initial");
+        $("#done").hide();
+    });
 
 });
